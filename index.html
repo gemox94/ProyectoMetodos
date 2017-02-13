@@ -1,7 +1,8 @@
-<!DOCTYPEi html>
-<html>
+<!DOCTYPE html>
+<html ng-app="metodos">
 
 <head>
+    <base href="/">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
@@ -49,9 +50,7 @@
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-
-
+                <div ng-view></div>
             </div>
         </div>
     </div>
@@ -65,6 +64,9 @@
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+
+    <script type="text/javascript" src="./public/angular/app.js"></script>
+    <script type="text/javascript" src="./public/angular/routes.js"></script>
 
 </body>
 </html>
