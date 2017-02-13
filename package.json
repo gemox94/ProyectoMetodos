@@ -1,0 +1,18 @@
+{
+  "name": "proyectometodos",
+  "version": "1.0.0",
+  "description": "First project of numerical methods page",
+  "main": "index.js",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
+    "d3": "^3.5.17",
+    "function-plot": "^1.17.3",
+    "nerdamer": "^0.5.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
