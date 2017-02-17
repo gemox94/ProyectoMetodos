@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="formule">Formula</label>
+            <input type="text" id="formule" class="form-control" ng-model="formule">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="form-group">
+                    <label for="a">Punto a</label>
+                    <input type="text" id="a" class="form-control" ng-model="a">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <button class="btn btn-info" ng-click="calculate()" style="width: 100%;">Calcular</button>
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-success" ng-click="plot()" style="width: 100%;">Gráficar</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="col-md-8">
+        <legend>f(x)</legend>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th ng-repeat="e in ecuation1 track by $index">Value {{$index+1}}</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td ng-repeat="r in result1 track by $index">{{r}}</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <legend>f'(x)</legend>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th ng-repeat="e in ecuation2 track by $index">Value {{$index+1}}</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td ng-repeat="r in result2 track by $index">{{r}}</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

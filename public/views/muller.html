@@ -6,16 +6,22 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="form-group">
-                    <label for="">Punto A</label>
-                    <input type="text" class="form-control" ng-model="pointA">
+                    <label for="">X0</label>
+                    <input type="text" class="form-control" ng-model="x0">
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="form-group">
-                    <label for="">Punto B</label>
-                    <input type="text" class="form-control" ng-model="pointB">
+                    <label for="">X1</label>
+                    <input type="text" class="form-control" ng-model="x1">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="">X1</label>
+                    <input type="text" class="form-control" ng-model="x2">
                 </div>
             </div>
         </div>
@@ -42,8 +48,6 @@
                 <button class="btn btn-success" ng-click="plot()" style="width: 100%;">Gráficar</button>
             </div>
         </div>
-
-
     </div>
 
     <div class="col-md-8">
@@ -51,26 +55,19 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>a</th>
-                    <th>b</th>
-                    <th>PM</th>
-                    <th>f(a)</th>
-                    <th>f(b)</th>
-                    <th>f(PM)</th>
+                    <th>X0</th>
+                    <th>X1</th>
+                    <th>X2</th>
                 </tr>
                 </thead>
 
                 <tbody>
                 <tr ng-repeat="result in results">
-                    <td>{{result.a}}</td>
-                    <td>{{result.b}}</td>
-                    <td>{{result.PM}}</td>
-                    <td>{{result.Fa}}</td>
-                    <td>{{result.Fb}}</td>
-                    <td>{{result.Fpm}}</td>
+                    <td>{{result.x0}}</td>
+                    <td>{{result.x1}}</td>
+                    <td>{{result.x2}}</td>
                 </tr>
                 </tbody>
-
             </table>
         </div>
 

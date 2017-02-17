@@ -8,14 +8,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label for="">Punto A</label>
-                    <input type="text" class="form-control" ng-model="pointA">
+                    <label for="">X0</label>
+                    <input type="text" class="form-control" ng-model="x0">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label for="">Punto B</label>
-                    <input type="text" class="form-control" ng-model="pointB">
+                    <label for="">X1</label>
+                    <input type="text" class="form-control" ng-model="x1">
                 </div>
             </div>
         </div>
@@ -51,23 +51,17 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>a</th>
-                    <th>b</th>
-                    <th>PM</th>
-                    <th>f(a)</th>
-                    <th>f(b)</th>
-                    <th>f(PM)</th>
+                    <th>Xn</th>
+                    <th>Xn-1</th>
+                    <th>Resultado</th>
                 </tr>
                 </thead>
 
                 <tbody>
                 <tr ng-repeat="result in results">
-                    <td>{{result.a}}</td>
-                    <td>{{result.b}}</td>
-                    <td>{{result.PM}}</td>
-                    <td>{{result.Fa}}</td>
-                    <td>{{result.Fb}}</td>
-                    <td>{{result.Fpm}}</td>
+                    <td>{{result.xn}}</td>
+                    <td>{{result.xn1}}</td>
+                    <td>{{result.result}}</td>
                 </tr>
                 </tbody>
 
